@@ -1,5 +1,6 @@
-import React from 'react';
-import {View, Text, Image, ScrollView, TextInput} from 'react-native';
+import React , { Component } from 'react';
+import {View, Text, Image,ScrollView, TextInput} from 'react-native';
+import { Button , Alert } from 'react-native'
 
 const App = () => {
   return (
@@ -10,7 +11,6 @@ const App = () => {
         alignItems:'center'
       }}> 
     
-     
       <View
       style={{
         backgroundColor : 'lightblue',
@@ -19,17 +19,16 @@ const App = () => {
         alignItems:'center',
           }}>
         
-        <Text style={{margin:30}} >Start React Learning</Text>
-       
+        <Text style={{margin:30}} >Start React Learning</Text>  
         <Image
           source={{
             uri: 'https://th.bing.com/th/id/OIP.ODc7gj3-ijGW67To5VcPrAHaGx?pid=ImgDet&rs=1',
           }}
           style={{width: 200, height: 200 }}
         /> 
-       
-      </View>
       
+      </View>
+  
       <TextInput
         style={{
           height:50,
@@ -52,6 +51,10 @@ const App = () => {
         }}
          placeholder="Password"
       /> 
+      
+        <Button style={{margin:30}} title="Sign UP"
+            onPress={() => Alert.alert(
+                    'Done , Thank you')}  />
     </ScrollView>
   );
 };
