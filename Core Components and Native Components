@@ -10,16 +10,19 @@ const App = () => {
         justifyContent: 'center',
         alignItems:'center'
       }}> 
-    
       <View
       style={{
         backgroundColor : 'lightblue',
         flex: 1,
         justifyContent: 'center',
         alignItems:'center',
+      
           }}>
         
-        <Text style={{margin:30}} >Start React Learning</Text>  
+        <Text 
+        style={{fontSize:30,margin:30}}>
+        Start React Learning
+        </Text>  
         <Image
           source={{
             uri: 'https://th.bing.com/th/id/OIP.ODc7gj3-ijGW67To5VcPrAHaGx?pid=ImgDet&rs=1',
@@ -52,7 +55,7 @@ const App = () => {
          placeholder="Password"
       /> 
       
-        <Button style={{margin:30}} title="Sign UP"
+        <Button style={{margin:30 }} title="Sign UP"
             onPress={() => Alert.alert(
                     'Done , Thank you')}  />
     </ScrollView>
