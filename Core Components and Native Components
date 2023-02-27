@@ -16,27 +16,41 @@ const App = () => {
         backgroundColor : 'lightblue',
         flex: 1,
         justifyContent: 'center',
-        alignItems:'center'
-      }}>
-        <Text >Start Java Learning</Text>
+        alignItems:'center',
+          }}>
+        
+        <Text style={{margin:30}} >Start React Learning</Text>
        
         <Image
           source={{
             uri: 'https://th.bing.com/th/id/OIP.ODc7gj3-ijGW67To5VcPrAHaGx?pid=ImgDet&rs=1',
           }}
-          style={{width: 200, height: 200}}
+          style={{width: 200, height: 200 }}
         /> 
        
       </View>
       
       <TextInput
         style={{
-        
-          height: 40,
-          borderColor: 'gray',
-          borderWidth: 1,
+          height:50,
+          width:300,
+          borderColor: 'white',
+          borderWidth: 3,
+          margin:30,
+          textAlign:'center',
         }}
-        defaultValue="You can type in me"
+    placeholder="Name"
+      /> 
+         <TextInput
+        style={{
+          height:50,
+          width:300,
+          borderColor: 'white',
+          borderWidth: 3,
+          margin:30,
+          textAlign:'center',
+        }}
+         placeholder="Password"
       /> 
     </ScrollView>
   );
